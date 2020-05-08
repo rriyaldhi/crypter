@@ -43,5 +43,5 @@ RSAKey *rsaKey = (RSAKey *)Crypto::generateKey(&rng, Crypto::RSA_KEY, 2048);
 
 RSAData *cipher = (RSAData *) Crypto::encrypt(Crypto::RSA, plain, rsaKey);
 
-RSAData *decrypted = (RSAData *) Crypto::decrypt(Crypto::RSA, cipher, rsaKey);
+RSAData *decrypted = (RSAData *) Crypto::decrypt(Crypto::RSA, cipher, rsaKey); 
 ```
