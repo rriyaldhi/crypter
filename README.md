@@ -2,7 +2,7 @@
 
 Crypter module provides a capability to encrypt a message using combination of AES-RSA hybrid encryption.
 
-![encryption schema](https://drive.google.com/uc?export=view&id=1PN05JGxric5VzXZHWmGvlKB7gPSoh1U5)
+![aes-rsa encryption schema](https://user-images.githubusercontent.com/10885503/81422441-40945f00-9153-11ea-8736-cbe9b60ba0fb.png)
 
 AES algorithm is implemented based on:
 
@@ -43,5 +43,5 @@ RSAKey *rsaKey = (RSAKey *)Crypto::generateKey(&rng, Crypto::RSA_KEY, 2048);
 
 RSAData *cipher = (RSAData *) Crypto::encrypt(Crypto::RSA, plain, rsaKey);
 
-RSAData *decrypted = (RSAData *) Crypto::decrypt(Crypto::RSA, cipher, rsaKey); 
+RSAData *decrypted = (RSAData *) Crypto::decrypt(Crypto::RSA, cipher, rsaKey);
 ```
